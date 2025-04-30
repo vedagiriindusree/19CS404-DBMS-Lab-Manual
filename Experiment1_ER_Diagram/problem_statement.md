@@ -46,17 +46,17 @@ Design a database for patient management, appointments, medical records, and bil
    - How you modeled prerequisites or billing.
 
 # ER Diagram Submission - Student Name
-
+# Name:Vedagiri Indu Sree
+# Reg.no:212223230236
 ## Scenario Chosen:
-University / Hospital (choose one)
+University 
 
 ## ER Diagram:
-![ER Diagram](er_diagram.png)
+![image](https://github.com/user-attachments/assets/9177c06b-a61a-4691-afaa-ecdd1e051a16)
 
 ## Entities and Attributes:
-- Entity1: Attributes
-- Entity2: Attributes
-...
+# Students:
+Attributes: StudentID, FirstName, LastName, DateOfBirth, Email, PhoneNumber, EnrollmentDate, DepartmentID
 
 ## Relationships and Constraints:
 - Relationship1 (Cardinality, Participation)
