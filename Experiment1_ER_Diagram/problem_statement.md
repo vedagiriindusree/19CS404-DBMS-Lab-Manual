@@ -50,29 +50,23 @@ Design a database for patient management, appointments, medical records, and bil
 # Reg.no:212223230236
 # Scenario Chosen:
 University 
-
 ## ER Diagram:
 ![image](https://github.com/user-attachments/assets/9177c06b-a61a-4691-afaa-ecdd1e051a16)
 
 ## Entities and Attributes:
+
 # Students:
 Attributes: StudentID, FirstName, LastName, DateOfBirth, Email, PhoneNumber, EnrollmentDate, DepartmentID.
-
 # Faculty:
 Attributes: FacultyID, FirstName, LastName, Email, PhoneNumber, HireDate, DepartmentID.
-
 # Department:
 Attributes: DepartmentID, DepartmentName, Location.
-
 # Course:
 Attributes: CourseID, CourseName, CourseCode, Credits, DepartmentID.
-
 # Enrollment:
 Attributes: EnrollmentID, StudentID, CourseID, EnrollmentDate, Grade.
-
 # Class:
 Attributes: ClassID, CourseID, FacultyID, Semester, Year, Schedule.
-
 # Advising:
 Attributes: AdvisingID, StudentID, FacultyID, AdvisingDate.
 
@@ -80,25 +74,18 @@ Attributes: AdvisingID, StudentID, FacultyID, AdvisingDate.
 
 ## Student–Advising–Faculty:
 Relationship: Advises Cardinality: Many-to-Many (each student can have multiple advisors, each faculty can advise multiple students) Participation: Total on Advising
-
 ## Student–Enrollment–Course:
 Relationship: Enrolled in Cardinality: Many-to-Many Participation: Total on Enrollment
-
 ## Course–Class–Faculty:
 Relationship: Teaches Cardinality: Many-to-Many (each course can be taught in multiple classes, each faculty can teach multiple classes)
-
 ## Course–Department:
 Relationship: Offered by Cardinality: Many-to-One (Each course belongs to one department)
-
 ## Student–Department:
 Relationship: Belongs to Cardinality: Many-to-One
-
 ## Faculty–Department:
 Relationship: Belongs to Cardinality: Many-to-One
-
 ## Class–Course:
 Relationship: Includes Cardinality: Many-to-One
-
 ## Enrollment–Class:
 Relationship: Taught by Not standard; assumes indirect mapping via faculty
 
