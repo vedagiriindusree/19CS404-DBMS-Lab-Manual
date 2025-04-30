@@ -96,6 +96,7 @@ WHERE age < (
 
 
 **Question 4**
+
 Write a SQL query to retrieve all columns from the CUSTOMERS table for customers whose AGE is LESS than $30
 
 Sample table: CUSTOMERS
@@ -115,6 +116,7 @@ WHERE AGE < 30;
 ![image](https://github.com/user-attachments/assets/596208e4-a577-46e2-85c9-df2cabf3ebea)
 
 **Question 5**
+
 Write a SQL query to retrieve all columns from the CUSTOMERS table for customers whose Address as Delhi
 
 Sample table: CUSTOMERS
@@ -134,6 +136,7 @@ WHERE ADDRESS = 'Delhi';
 ![image](https://github.com/user-attachments/assets/dd79dbfe-1345-4e4e-94a4-157427fa70a6)
 
 **Question 6**
+
 From the following tables write a SQL query to find salespeople who had more than one customer. Return salesman_id and name.
 
 salesman table
@@ -160,6 +163,7 @@ HAVING COUNT(c.customer_id) > 1;
 ![image](https://github.com/user-attachments/assets/b8aa43ee-fadc-4fbc-b6a7-f3ab07754e5f)
 
 **Question 7**
+
 Write a query to display all the customers whose ID is the difference between the salesperson ID of Mc Lyon and 2001.
 
 salesman table
@@ -187,6 +191,7 @@ WHERE customer_id = (
 ![image](https://github.com/user-attachments/assets/aa53bb8e-7d8a-4102-9e6e-574d94cdb1c6)
 
 **Question 8**
+
 Write a SQL query to retrieve all columns from the CUSTOMERS table for customers whose salary is greater than $4500.
 
 Sample table: CUSTOMERS
@@ -208,6 +213,7 @@ WHERE SALARY > 4500;
 
 
 **Question 9**
+
 Write a SQL query to Retrieve the names of customers who have a phone number that is not shared with any other customer.
 
 SAMPLE TABLE: customer
@@ -230,6 +236,7 @@ WHERE phone NOT IN (
 
 
 **Question 10**
+
 Write a SQL query that retrieve all the columns from the table "Grades", where the grade is equal to the maximum grade achieved in each subject.
 ```
 SELECT *
@@ -241,7 +248,6 @@ WHERE grade = (
     GROUP BY subject
 );
 ```
-
 **Output:**
 
 ![image](https://github.com/user-attachments/assets/ee3ffb42-51f2-473e-9621-f5a8c3772024)
