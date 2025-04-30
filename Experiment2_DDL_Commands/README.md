@@ -197,11 +197,11 @@ customer_id | cust_name | city | grade | salesman_id -------------+-------------
 ```
 ALTER TABLE customer  ADD COLUMN discount DECIMAL(5,2);```
 
-## **Output:**
+###**Output:**
 
 ![image](https://github.com/user-attachments/assets/fc9f743c-666b-401b-84c5-983bd21a4926)
 
-## **Question 8**
+###**Question 8**
 
 Create a table named Members with the following columns:
 
