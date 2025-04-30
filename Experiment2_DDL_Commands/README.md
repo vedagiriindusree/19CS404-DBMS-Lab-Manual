@@ -1,6 +1,6 @@
 # Experiment 2: DDL Commands
-# Name:Vedagiri Indu Sree
-# Reg.no:212223230236
+## Name:Vedagiri Indu Sree
+## Reg.no:212223230236
 ## AIM
 To study and implement DDL commands and different types of constraints.
 
@@ -195,7 +195,8 @@ Sample table: customer
 
 customer_id | cust_name | city | grade | salesman_id -------------+----------------+------------+-------+------------- 3002 | Nick Rimando | New York | 100 | 5001 3007 | Brad Davis | New York | 200 | 5001 3005 | Graham Zusi | California | 200 | 5002
 ```
-ALTER TABLE customer  ADD COLUMN discount DECIMAL(5,2);```
+ALTER TABLE customer  ADD COLUMN discount DECIMAL(5,2);
+```
 
 **Output:**
 
@@ -211,7 +212,6 @@ create table Members(
 MemberID INTEGER,
 MemberName TEXT,
 JoinDate DATE
-
 );
 ```
 ## **Output:**
