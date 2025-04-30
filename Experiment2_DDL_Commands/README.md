@@ -184,6 +184,7 @@ SELECT CustomerID, Name, Address, Email
 FROM Old_customers;6
 ```
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/5ad04860-aab6-4066-9138-47629ff8a49f)
 
 **Question 7**
@@ -196,7 +197,7 @@ customer_id | cust_name | city | grade | salesman_id -------------+-------------
 ```
 ALTER TABLE customer  ADD COLUMN discount DECIMAL(5,2);```
 
-**Output:**
+## **Output:**
 
 ![image](https://github.com/user-attachments/assets/fc9f743c-666b-401b-84c5-983bd21a4926)
 
@@ -213,7 +214,7 @@ JoinDate DATE
 
 );
 ```
-**Output:**
+## **Output:**
 
 ![image](https://github.com/user-attachments/assets/0b0a2862-476c-4930-be64-9efc6e273acb)
 
@@ -233,7 +234,7 @@ Sample table: customer
   alter table customer
 add column birth_date timestamp;
 ```
-**Output:**
+## **Output:**
 
 ![image](https://github.com/user-attachments/assets/9eb90475-b45d-40ff-aa44-3813174201ba)
 
@@ -250,7 +251,7 @@ Note: The Subject and MARKS columns will use their default values.
 insert into Student_details(RollNo,Name,Gender)
 values(204,"Samuel Black","M");
 ```
-**Output:**
+## **Output:**
 
 ![image](https://github.com/user-attachments/assets/9d1f9460-2ad8-4479-99d2-7a8a2d5f5797)
 
