@@ -105,6 +105,7 @@ CREATE TABLE Table_Name (
 ```
 
 **Question 1**
+
 Write a SQL query to modify the Student_details table by adding a new column Email of type VARCHAR(50) and updating the column MARKS to have a default value of 0.
 ```
 ALTER TABLE  Student_details ADD COLUMN Email VARCHAR(50);
@@ -116,6 +117,7 @@ ALTER TABLE  Student_details ADD COLUMN MARKS DEFAULT '0';
 
 
 **Question 2**
+
 Create a new table named contacts with the following specifications: contact_id as INTEGER and primary key. first_name as TEXT and not NULL. last_name as TEXT and not NULL. email as TEXT. phone as TEXT and not NULL with a check constraint to ensure the length of phone is at least 10 characters.
 ```
 CREATE TABLE contacts (
@@ -133,6 +135,7 @@ CHECK (LENGTH(phone)>=10)
 
 
 **Question 3**
+
 Insert all books from Out_of_print_books into Books
 
 Table attributes are ISBN, Title, Author, Publisher, YearPublished
@@ -147,6 +150,7 @@ FROM Out_of_print_books;
 
 
 **Question 4**
+
 Create a table named Departments with the following columns:
 
 DepartmentID as INTEGER DepartmentName as TEXT
@@ -160,6 +164,7 @@ DepartmentName TEXT);
 ![image](https://github.com/user-attachments/assets/3c02ebb4-0350-4b0b-b74a-3611066239c4)
 
 **Question 5**
+
 Write an SQL query to add two new columns, department_id and manager_id, to the table employee with datatype of INTEGER. The manager_id column should have a default value of NULL.
 ```
 ALTER TABLE employee ADD COLUMN department_id INTEGER;
@@ -169,6 +174,7 @@ ALTER TABLE employee ADD COLUMN manager_id INTEGER DEFAULT NULL;
 ![image](https://github.com/user-attachments/assets/aa64eeea-195a-4162-91ea-0dd7a32aa315)
 
 **Question 6**
+
 Insert all customers from Old_customers into Customers
 
 Table attributes are CustomerID, Name, Address, Email
@@ -181,6 +187,7 @@ FROM Old_customers;6
 ![image](https://github.com/user-attachments/assets/5ad04860-aab6-4066-9138-47629ff8a49f)
 
 **Question 7**
+
  ---Write a SQL query to Add a new column named "discount" with the data type DECIMAL(5,2) to the "customer" table.
 
 Sample table: customer
@@ -193,26 +200,8 @@ ALTER TABLE customer  ADD COLUMN discount DECIMAL(5,2);```
 
 ![image](https://github.com/user-attachments/assets/fc9f743c-666b-401b-84c5-983bd21a4926)
 
-**Question 8**
----
-Create a table named Customers with the following columns:
+## **Question 8**
 
-CustomerID as INTEGER
-Name as TEXT
-Email as TEXT
-JoinDate as DATETIME
-```sql
-CREATE TABLE Customers(
-CustomerID INTEGER,
-Name TEXT,
-Email TEXT ,
-JoinDate DATETIME);
-```
-**Output:**
-
-![image](https://github.com/user-attachments/assets/88356e3d-4561-48c1-b501-50e514ab8db2)
-
-**Question 8**
 Create a table named Members with the following columns:
 
 MemberID as INTEGER MemberName as TEXT JoinDate as DATE
@@ -229,7 +218,8 @@ JoinDate DATE
 ![image](https://github.com/user-attachments/assets/0b0a2862-476c-4930-be64-9efc6e273acb)
 
 
-**Question 9**
+## **Question 9**
+
 Write a SQL query to add birth_date attribute as timestamp (datatype) in the table customer 
 
 Sample table: customer
@@ -247,7 +237,8 @@ add column birth_date timestamp;
 
 ![image](https://github.com/user-attachments/assets/9eb90475-b45d-40ff-aa44-3813174201ba)
 
-**Question 10**
+## **Question 10**
+
 Insert the below data into the Student_details table, allowing the Subject and MARKS columns to take their default values.
 
 RollNo      Name          Gender      
