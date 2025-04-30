@@ -48,7 +48,7 @@ Design a database for patient management, appointments, medical records, and bil
 # ER Diagram Submission - Student Name
 # Name:Vedagiri Indu Sree
 # Reg.no:212223230236
-## Scenario Chosen:
+# Scenario Chosen:
 University 
 
 ## ER Diagram:
