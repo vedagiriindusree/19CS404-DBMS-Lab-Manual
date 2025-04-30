@@ -29,14 +29,6 @@ END;
 # PL/SQL Programs – Steps and Expected Output
 
 ## 1. Write a PL/SQL program to find the Greatest of Two Numbers
-
-### Steps:
-- Declare two numeric variables and initialize them.
-- Use an `IF` statement to compare the values.
-- Display the greater number using `DBMS_OUTPUT.PUT_LINE`.
-
-**Expected Output:**  
-## 1. Write a PL/SQL program to find the Greatest of Two Numbers
 ## Steps:
 1. Declare two numeric variables and initialize them.
 2. Use an IF statement to compare the values.
