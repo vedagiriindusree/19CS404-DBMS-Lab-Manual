@@ -54,6 +54,7 @@ set product_name='Grapefruit'
 where product_id=4;
 ```
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/f7cb35b7-e15c-4d6d-be26-695316a2752f)
 
 **Question 2**
@@ -64,6 +65,7 @@ set reorder_lvl=reorder_lvl*0.7
 where cost_price>50 and quantity<100;
 ```
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/be6557eb-cca2-408a-ba08-390d6e796285)
 
 **Question 3**
@@ -73,6 +75,7 @@ delete from Surgeries
 where surgery_date='2024-02-28';
 ```
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/10904988-223a-42e7-94ca-3b48b01b9c31)
 
 **Question 4**
@@ -82,6 +85,7 @@ delete from customer
 where GRADE!=3;
 ```
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/79285c8a-2978-407d-82ba-b3c2cdb69272)
 
 **Question 5**
@@ -91,6 +95,7 @@ select * from EmployeeInfo
 where EmpLname like '%A' and length(EmpLname)=5;
 ```
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/821d1823-0fea-438e-9709-d82220eea49a)
 
 **Question 6**
@@ -103,6 +108,7 @@ end as base_status
 from Calculations;
 ```
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/01350e6d-b955-4d9f-8d27-c40f32b3423e)
 
 **Question 7**
@@ -112,6 +118,7 @@ select product_id,original_price,discount_percentage,tax_rate,(original_price*(1
 from products;
 ```
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/1fb06574-24fd-4972-b6e2-79a5a2065676)
 
 **Question 8**
@@ -122,6 +129,7 @@ from employees
 order by EmployeeID desc;
 ```
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/fdff8b34-9326-409f-9a0f-184c53772e6c)
 
 **Question 9**
@@ -130,6 +138,7 @@ Write a SQL statement to retrieve city(column name) of all customers from custom
 select distinct city from customers;
 ```
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/38dc88ff-bf42-4f73-a8ca-5a1b75ae5a23)
 
 **Question 10**
@@ -140,6 +149,7 @@ SET SALARY= SALARY *2
 WHERE JOB_ID like'%MAN';
 ```
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/30c35d8d-ef7b-4012-8554-9d1fe551bc5b)
 
 ## RESULT
