@@ -234,6 +234,7 @@ WHERE phone NOT IN (
 
 **Output:**
 
+![WhatsApp Image 2025-05-01 at 13 12 02_65167fea](https://github.com/user-attachments/assets/1fa88d08-76d4-4219-8388-42d4480f5ebc)
 
 **Question 10**
 
