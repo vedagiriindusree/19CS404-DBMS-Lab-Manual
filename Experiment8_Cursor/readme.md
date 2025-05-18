@@ -78,7 +78,7 @@ Steps:
 - Implement exception handling to catch the relevant exceptions and display appropriate messages.
 
 #### Program:
-
+```
 DECLARE
    CURSOR emp_cur IS
       SELECT emp_name, designation FROM employees;
@@ -96,7 +96,7 @@ EXCEPTION
    WHEN OTHERS THEN
       DBMS_OUTPUT.PUT_LINE('Error: ' || SQLERRM);
 END;
-
+```
 
 ## Output:  
 The program should display the employee details or an error message.
@@ -121,7 +121,7 @@ Steps:
 - Implement exception handling to catch and display relevant error messages.
 
 #### Program:
-
+```
 DECLARE
    CURSOR sal_cursor(min_sal NUMBER, max_sal NUMBER) IS
       SELECT emp_name, salary FROM employees WHERE salary BETWEEN min_sal AND max_sal;
@@ -142,7 +142,7 @@ EXCEPTION
    WHEN OTHERS THEN
       DBMS_OUTPUT.PUT_LINE('Unexpected error: ' || SQLERRM);
 END;
-
+```
 
 ## Output:  
 The program should display the employee details within the specified salary range or an error message if no data is found.
@@ -167,7 +167,7 @@ Steps:
 - Implement exception handling to catch the relevant exceptions.
 
 #### Program:
-
+```
 DECLARE
    found BOOLEAN := FALSE;
 BEGIN
@@ -184,7 +184,7 @@ EXCEPTION
    WHEN OTHERS THEN
       DBMS_OUTPUT.PUT_LINE('Unexpected error: ' || SQLERRM);
 END;
-
+```
 
 ## Output:  
 The program should display employee names with their department numbers or the appropriate error message if no data is found.
@@ -209,7 +209,7 @@ Steps:
 - Implement exception handling to catch the relevant exceptions and display appropriate messages.
 
 #### Program:
-
+```
 DECLARE
    CURSOR emp_cur IS SELECT * FROM employees;
    emp_rec employees%ROWTYPE;
@@ -233,7 +233,7 @@ EXCEPTION
    WHEN OTHERS THEN
       DBMS_OUTPUT.PUT_LINE('Error: ' || SQLERRM);
 END;
-
+```
 
 ## Output:  
 The program should display employee records or the appropriate error message if no data is found.
@@ -258,7 +258,7 @@ Steps:
 - Implement exception handling to handle NO_DATA_FOUND or other errors that may occur.
 
 #### Program:
-
+```
 DECLARE
    CURSOR emp_cur IS
       SELECT emp_id, salary FROM employees WHERE dept_no = 10 FOR UPDATE;
@@ -279,7 +279,7 @@ EXCEPTION
    WHEN OTHERS THEN
       DBMS_OUTPUT.PUT_LINE('Error during update: ' || SQLERRM);
 END;
-
+```
 
 ## Output:  
 The program should update employee salaries and display a message, or it should display an error message if no data is found.
