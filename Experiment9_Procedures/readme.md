@@ -14,7 +14,7 @@ PL/SQL (Procedural Language/SQL) extends SQL by adding procedural constructs lik
 A PL/SQL procedure is a subprogram that performs a specific action. It does not return a value directly but can return values using OUT parameters.
 
 Syntax:
-
+```
 CREATE OR REPLACE PROCEDURE procedure_name (parameters)
 IS
 BEGIN
@@ -26,11 +26,11 @@ To call the procedure
 
 sql
 EXEC procedure_name(arguments);
-
+```
 
 ### Function
 A PL/SQL function is a subprogram that returns a single value using the RETURN keyword.
-
+```
 
 CREATE OR REPLACE FUNCTION function_name (parameters)
 RETURN datatype
@@ -45,7 +45,7 @@ To call the function:
 
 sql
 SELECT function_name(arguments) FROM DUAL;
-
+```
 
 Key Differences:
 
@@ -63,7 +63,7 @@ Key Differences:
 
 Expected Output:  
 Square of 6 is 36
-
+```
 
 CREATE OR REPLACE PROCEDURE find_square(p_number IN NUMBER) IS
     v_square NUMBER;
@@ -78,7 +78,7 @@ BEGIN
     find_square(6);
 END;
 /
-
+```
 ![image](https://github.com/user-attachments/assets/d6436d5d-b540-43d7-a396-2a8debfbb20a)
 
 ---
@@ -96,7 +96,7 @@ Expected Output:
 Factorial of 5 is 120
 
 SET SERVEROUTPUT ON;
-
+```
 CREATE OR REPLACE FUNCTION get_factorial(p_number IN NUMBER)
 RETURN NUMBER
 IS
@@ -122,7 +122,7 @@ BEGIN
    DBMS_OUTPUT.PUT_LINE('Factorial of ' || v_input || ' is ' || v_output);
 END;
 /
-
+```
 
 ![image](https://github.com/user-attachments/assets/1319e42f-c31c-49dd-8c20-1bb349322a54)
 
@@ -142,7 +142,7 @@ Expected Output:
 
 SET SERVEROUTPUT ON;
 
-
+```
 CREATE OR REPLACE PROCEDURE check_even_odd(p_number IN NUMBER) IS
 BEGIN
   
@@ -159,7 +159,7 @@ BEGIN
 END;
 /
 
-
+```
 ![image](https://github.com/user-attachments/assets/1275528f-e95b-4523-8f3c-90f065a73b94)
 
 ---
@@ -175,7 +175,7 @@ END;
 
 Expected Output:  
 Reversed number of 1234 is 4321
-
+```
 CREATE OR REPLACE FUNCTION reverse_number(p_number IN NUMBER)
 RETURN NUMBER IS
     v_number     NUMBER := p_number;
@@ -200,7 +200,7 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('Reversed number of ' || v_input || ' is ' || v_result);
 END;
 
-
+```
 ![image](https://github.com/user-attachments/assets/b08ddc4c-962a-4af3-b600-55a98927cc9a)
 
 ---
@@ -221,7 +221,7 @@ Multiplication table of 5:
 ...  
 5 x 10 = 50
 
-
+```
 CREATE OR REPLACE PROCEDURE print_table(p_number IN NUMBER) IS
 BEGIN
     DBMS_OUTPUT.PUT_LINE('Multiplication table of ' || p_number || ':');
@@ -236,7 +236,7 @@ BEGIN
     print_table(5);
 END;
 /
-
+```
 
 ![image](https://github.com/user-attachments/assets/0ef9eca5-64dc-4cc4-a91b-218d48a989dc)
 
