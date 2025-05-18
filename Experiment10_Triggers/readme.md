@@ -91,11 +91,10 @@ INSERT INTO sensitive_data (data_id, data_value) VALUES (1, 'Confidential Info')
 
 
 DELETE FROM sensitive_data WHERE data_id = 1;
-
+```
 ![image](https://github.com/user-attachments/assets/786fb976-dd58-4d75-bca7-7456571bc73e)
 
 ---
-```
 ## 3. Write a trigger to automatically update a last_modified timestamp.
 Steps:
 - Add a last_modified column to the products table.
